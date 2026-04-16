@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Tic Tac Toe</h1>
+
+<!-- NAME ENTRY -->
+<div id="setup">
+  <input id="nameInput" placeholder="Enter player name">
+  <button id="addPlayerBtn">Add Player</button>
+</div>
+
+<!-- INFO -->
+<div id="info">
+  <p id="playerX">X: </p>
+  <p id="playerO">O: </p>
+  <p id="turn">Turn: </p>
+  <p id="timer">Time: 0</p>
+  <p id="score">Score - X:0 O:0 Draw:0</p>
+</div>
+
+<!-- GRID -->
+<div id="board"></div>
+
+<!-- BUTTON -->
+<button id="restartBtn">Restart</button>
+
+<!-- POPUP -->
+<div id="popup" class="hidden">
+  <p id="message"></p>
+  <button onclick="closePopup()">Close</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
